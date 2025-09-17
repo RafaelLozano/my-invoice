@@ -1,0 +1,19 @@
+.invoice-app { }
+.invoice-app__sidebar {
+  padding: 12px;
+  position: sticky; top: 16px; height: fit-content;
+}
+.invoice-app__panel + .invoice-app__panel { margin-top: 14px; }
+.invoice-app__panel { padding: 12px; border: 1px dashed rgba(255,255,255,.15); border-radius: 12px; }
+.invoice-app__main { display: grid; gap: 16px; }
+.form { display: grid; gap: 10px; }
+.form__row { display: grid; gap: 8px; }
+.form__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 640px) { .form__grid { grid-template-columns: 1fr } }
+.items { }
+.items__toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.items__table-wrapper { overflow:auto; }
+.summary { display: grid; grid-template-columns: 1fr 320px; gap: 16px; }
+@media (max-width: 900px) { .summary { grid-template-columns: 1fr } }
+.summary__totals { padding: 16px; }
+.summary__actions { display: flex; gap: 8px; justify-content: flex-end; }
